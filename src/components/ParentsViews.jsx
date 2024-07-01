@@ -14,10 +14,10 @@ const ParentsViews = () => {
       name: "Parent Name",
      image: topper2,
     },
-    {
-      name: "Parent Name",
-     image: topper3,
-    },
+    // {
+    //   name: "Parent Name",
+    //  image: topper3,
+    // },
   ];
 
   return (
