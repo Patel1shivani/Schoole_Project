@@ -3,11 +3,11 @@ import img1 from '../assets/img1.jpg';
 
 const Banner = () => {
   return (
-    <div className="bg-[#F2E8E8]">
+    <div className="bg-[#F2E8E8] mt-[-55px]">
       <section className="flex mx-auto text-gray-600 body-font w-[80%] sm:w-full">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:w-full sm:w-full w-full">
-            <img className="object-cover object-center rounded" alt="hero" src={img1} />
+            <img className="object-cover object-center rounded " alt="hero" src={img1} />
           </div>
           <div className=" md:w-full lg:pr-24 flex flex-col md:items-start md:text-left mb-16 md:mb-0 sm:ml-10 items-center text-center">
             <h1 className="title-font text-3xl sm:text-4xl md:text-md mb-4 font-medium text-gray-900">
@@ -19,7 +19,7 @@ const Banner = () => {
             </p>
            
             <div className="flex justify-center">
-              <button className="inline-flex text-[#7B1113] border border-[#7B1113] py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <button className="inline-flex text-[#7B1113] border border-[#7B1113] py-2 px-6 focus:outline-none hover:bg-[#7B1113] rounded text-lg">
                 Learn more
               </button>
             </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import map1 from '../assets/map1.png'
 
 const Footer = () => {
   const data = [
@@ -19,7 +20,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-[#1F1F1F]">
+    <div className="bg-[#1F1F1F] mt-[50px]">
       <div className="max-w-screen-lg px-4 py-5 sm:px-6 text-white sm:grid md:grid-cols-3 sm:grid-cols-2 mx-auto">
         <div className="p-5">
           <h3 className="font-bold text-5xl text-center  align-middle">LOGO</h3>
@@ -31,8 +32,8 @@ const Footer = () => {
         </div>
 
         <div className="p-5">
-          <div className="text-lg text-center uppercase font-bold mb-5">Location</div>
-          <img src="https://s3-alpha-sig.figma.com/img/477c/963d/1e50e960053457447dff078b5844dba7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BBbTShgfi~~gi6mt1oDId8AmuDuyi6TVS1VKbcUGz4sVtKRBPxjoQBSmhkEDYlP-oSm5uxTV1bUuuw3PYFNCS9R8oEk7GJxReSWJSCK5F5Oc31-SHrZdqWbV3Mkuntnhgy9GAoMjNbGunDA5ldu2JYPlwNdVJ5qWH-Egg1vk3WUBLSIuIEi31wjPBPT6~aczg2IpiIp4oour7tUcoMZahxxPA1pcQt8VSl44aZVhGhcd-x66SyN8jM2A8yVdb2oar9h5~9vrRlUJqN18b5mthas1SJPnxYXEYK1woQ2D6ms25Hu3Dbc7rtuv9AHtO9zDSs3KvjD4ygQz59MLyo2LbA__" alt="Location" />
+          <div className="text-lg uppercase font-bold ">Location</div>
+          <img src={map1} alt="Location" />
         </div>
       </div>
 

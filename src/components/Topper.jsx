@@ -3,6 +3,10 @@ import topper1 from '../assets/topper1.jpg';
 import topper2 from '../assets/topper2.jpg';
 import topper3 from '../assets/topper3.jpg';
 import topper4 from '../assets/topper4.jpg';
+import '../components/Scroll.css'
+
+
+
 
 const Topper = () => {
   const toppers = [
@@ -30,11 +34,11 @@ const Topper = () => {
 
   return (
     <div>
-      <h1 className="text-center text-4xl md:text-4xl font-bold">Topper</h1>
-      <div className="sm:flex mx-auto w-[70%] md:w-full">
-        {toppers.map((student, index) => (
-          <div key={index} className="relative flex flex-col text-white bg-[#7B1113] shadow-md w-auto m-3 p-3">
-            <img className="w-full h-auto" src={student.image} alt="profile-picture" />
+      <h1 className=" mt-[40px] text-center  text-4xl md:text-4xl lg:mt-[90px] font-bold">Topper</h1>
+      <div className="scroll flex overflow-x-auto sm:flex mt-5 mx-auto w-[250px] lg:w-[80%]">
+        {toppers.map((student, index) => ( 
+          <div key={index} className="relative flex-none  w-[240px] flex flex-wrap flex-col text-white bg-[#7B1113] shadow-md lg:w-auto m-3 p-3">
+            <img className="w-[230px] lg:w-[250px] lg:h-auto" src={student.image} alt="profile-picture" />
             <div className="p-6 text-center">
               <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-white">
                 {student.name}
